@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Models/sponza.glb</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Textures/sky-cube/nx.png</file>
+        <file>Textures/sky-cube/ny.png</file>
+        <file>Textures/sky-cube/nz.png</file>
+        <file>Textures/sky-cube/px.png</file>
+        <file>Textures/sky-cube/py.png</file>
+        <file>Textures/sky-cube/pz.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Shaders/skybox.fs</file>
+        <file>Shaders/skybox.vs</file>
+        <file>Shaders/model.fs</file>
+        <file>Shaders/model.vs</file>
+    </qresource>
+</RCC>
