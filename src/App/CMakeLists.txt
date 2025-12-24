@@ -1,18 +1,35 @@
 set(SRCS
+    Camera.cpp
+    Camera.h
+    Entity.cpp
+    Entity.h
     main.cpp
+    ModelEntity.cpp
+    ModelEntity.h
+    OpenGLContext.cpp
+    OpenGLContext.h
+    SceneGraph.cpp
+    SceneGraph.h
+    SceneRenderer.cpp
+    SceneRenderer.h
+    SkyboxEntity.cpp
+    SkyboxEntity.h
     Window.cpp
     Window.h
 
-    Shaders/diffuse.fs
-    Shaders/diffuse.vs
-    Textures/voronoi.png
+    Shaders/model.fs
+    Shaders/model.vs
+    Shaders/skybox.fs
+    Shaders/skybox.vs
 
-    resources.qrc
+    Models/noel.glb
 )
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-add_executable(demo-app ${SRCS})
+qt_add_big_resources(RES resources.qrc)
+
+add_executable(demo-app ${SRCS} ${RES})
 
 target_link_libraries(demo-app
     PRIVATE
